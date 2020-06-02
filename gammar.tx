@@ -1,0 +1,15 @@
+Planned: commands*=Functions;
+Functions: Add_class | Del_class_onday | Del_class | Check | Print_schedule | Del_schedule | Load_schedule | Save_schedule | Exit | Help;
+Add_class: 'add_class('clase=Class')';
+Del_class: 'del_class('id=STRING')';
+Del_class_onday: 'del_class_onday('id=STRING','day=Day')';
+Check: 'check('h_start=Hour','h_end=Hour','day=Day')';
+Print_schedule: 'print_schedule('void=''')';
+Del_schedule: 'del_schedule('void=''')';
+Load_schedule: 'load_schedule('void=''')';
+Save_schedule: 'save_schedule('void=''')';
+Exit: 'exit('void=''')';
+Help: 'help('void=''')';
+Class: id=STRING','name=STRING','professor=STRING','h_start=Hour','h_end=Hour','day=Day','classroom=STRING;
+Day: 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | 'Saturday';
+Hour: h=INT':'m=INT;
